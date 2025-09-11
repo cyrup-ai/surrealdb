@@ -59,6 +59,7 @@ impl fmt::Display for QuoteStr<'_> {
 	}
 }
 
+#[allow(dead_code)] // Used via Fmt trait, not direct construction
 pub struct EscapeKey<'a>(pub &'a str);
 impl fmt::Display for EscapeKey<'_> {
 	fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {

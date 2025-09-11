@@ -7,6 +7,7 @@ use crate::core::rpc::RpcError;
 use crate::core::val::Value;
 
 #[derive(Clone, Debug, Serialize)]
+#[allow(dead_code)] // API struct with multiple const instances and methods
 pub struct Failure {
 	pub(crate) code: i64,
 	pub(crate) message: Cow<'static, str>,

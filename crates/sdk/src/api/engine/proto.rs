@@ -24,6 +24,7 @@ pub enum Status {
 #[derive(Debug, Deserialize)]
 #[doc(hidden)]
 #[non_exhaustive]
+#[allow(dead_code)] // SDK API struct for protocol communication
 pub struct QueryMethodResponse {
 	pub time: String,
 	pub status: Status,

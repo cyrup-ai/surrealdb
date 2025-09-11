@@ -5,6 +5,7 @@ use crate::val::Duration;
 
 #[derive(Debug, Hash, Clone, Eq, PartialEq, PartialOrd)]
 #[cfg_attr(feature = "arbitrary", derive(arbitrary::Arbitrary))]
+#[allow(dead_code)] // Used in API definitions and imports
 // Durations representing the expiration of different elements of the access
 // method In this context, the None variant represents that the element does not
 // expire

@@ -5,6 +5,7 @@ use crate::key::category::{Categorise, Category};
 use crate::kvs::KVKey;
 
 #[derive(Clone, Debug, Eq, PartialEq, PartialOrd, Serialize, Deserialize)]
+#[allow(dead_code)] // Used in tests and via new() method
 pub(crate) struct Kv {
 	__: u8,
 }

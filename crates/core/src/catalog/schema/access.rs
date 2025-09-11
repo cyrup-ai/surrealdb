@@ -12,6 +12,7 @@ use crate::val::Value;
 /// In this context, the None variant represents that the element does not expire
 #[revisioned(revision = 1)]
 #[derive(Debug, Hash, Clone, Eq, PartialEq, PartialOrd)]
+#[allow(dead_code)] // API struct for access method configuration
 pub struct AccessDuration {
 	/// Duration after which the grants generated with the access method expire
 	/// For access methods whose grants are tokens, this value is irrelevant

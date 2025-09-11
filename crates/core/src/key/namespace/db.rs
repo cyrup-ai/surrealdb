@@ -21,7 +21,7 @@ impl KVKey for DatabaseKey<'_> {
 	type ValueType = DatabaseDefinition;
 }
 
-pub fn new(ns: NamespaceId, db: &str) -> DatabaseKey {
+pub fn new<'key>(ns: NamespaceId, db: &'key str) -> DatabaseKey<'key> {
 	DatabaseKey::new(ns, db)
 }
 

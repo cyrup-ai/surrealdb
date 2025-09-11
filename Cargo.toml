@@ -66,7 +66,7 @@ argon2 = "0.5.2"
 arrayvec = "0.7.6"
 async-channel = "2.3.1"
 async-executor = "1.13.1"
-async-graphql = { version = "7.0.9", default-features = false }
+async-graphql = { version = "7.0.13", default-features = false }
 async-graphql-axum = "=7.0.13"
 async-trait = "0.1.88"
 base64 = "0.21.5"
@@ -381,6 +381,9 @@ unexpected_cfgs = { level = "warn", check-cfg = [
 ] }
 
 [workspace.lints.clippy]
+
+# Allow needless lifetimes - many are needed for API coherence
+needless_lifetimes = "allow"
 
 # Checks for usage of `#[allow]` attribute and suggests replacing it with `#[expect]`.
 # `#[expect]` attributes suppress the lint emission, but emit a warning if the expectation is unfulfilled.

@@ -55,6 +55,7 @@ impl From<crate::expr::AccessType> for AccessType {
 }
 
 // Allows retrieving the JWT configuration for any access type.
+#[allow(dead_code)] // API trait with implementations
 pub trait Jwt {
 	fn jwt(&self) -> &JwtAccess;
 }
