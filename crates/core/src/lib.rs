@@ -3,6 +3,7 @@
 // This triggers because we have regex's in or Value type which have a unsafecell inside.
 #![allow(clippy::mutable_key_type)]
 
+
 //! # Surrealdb Core
 //!
 //! This crate is the internal core library of SurrealDB.

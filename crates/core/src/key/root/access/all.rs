@@ -15,11 +15,11 @@ impl KVKey for AccessRoot<'_> {
 	type ValueType = Vec<u8>;
 }
 
-pub fn new(ac: &str) -> AccessRoot {
+pub fn new(ac: &str) -> AccessRoot<'_> {
 	AccessRoot::new(ac)
 }
 
-impl Categorise for AccessRoot<'_> {
+impl<'a> Categorise for AccessRoot<'a> {
 	fn categorise(&self) -> Category {
 		Category::AccessRoot
 	}

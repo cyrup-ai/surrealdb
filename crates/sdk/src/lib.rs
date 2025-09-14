@@ -16,6 +16,7 @@
 #![doc(html_logo_url = "https://surrealdb.s3.amazonaws.com/icon.png")]
 #![cfg_attr(docsrs, feature(doc_cfg))]
 
+
 #[cfg(all(target_family = "wasm", feature = "ml"))]
 compile_error!("The `ml` feature is not supported on Wasm.");
 

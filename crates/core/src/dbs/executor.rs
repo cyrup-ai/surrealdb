@@ -659,6 +659,7 @@ impl Executor {
 	}
 
 	#[instrument(level = "debug", name = "executor", target = "surrealdb::core::dbs", skip_all)]
+	#[allow(dead_code)]
 	pub async fn execute(
 		kvs: &Datastore,
 		ctx: Context,
@@ -680,6 +681,7 @@ impl Executor {
 		Self::execute_expr_stream(kvs, ctx, opt, false, stream).await
 	}
 
+	#[allow(dead_code)]
 	pub async fn execute_expr(
 		kvs: &Datastore,
 		ctx: Context,

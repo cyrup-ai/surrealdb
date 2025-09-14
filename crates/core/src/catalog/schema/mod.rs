@@ -85,6 +85,7 @@ impl Display for Permission {
 
 #[revisioned(revision = 1)]
 #[derive(Clone, Debug, Eq, PartialEq, Hash)]
+#[allow(dead_code)]
 pub enum Base {
 	Root,
 	Ns,

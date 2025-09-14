@@ -2,6 +2,7 @@ use std::fmt;
 
 #[derive(Clone, Copy, Debug, Eq, PartialEq, Hash)]
 /// ChangeFeedInclude statements are an appendix
+#[allow(dead_code)]
 pub enum ChangeFeedInclude {
 	Original,
 }

@@ -22,6 +22,7 @@ pub enum AccessType {
 }
 
 // Allows retrieving the JWT configuration for any access type.
+#[allow(dead_code)]
 pub trait Jwt {
 	fn jwt(&self) -> &JwtAccess;
 }

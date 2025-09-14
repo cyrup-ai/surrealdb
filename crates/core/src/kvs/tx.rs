@@ -1967,6 +1967,7 @@ impl Transaction {
 
 	/// Ensure a specific table (and database, and namespace) exist.
 	#[instrument(level = "trace", target = "surrealdb::core::kvs::tx", skip(self))]
+	#[allow(dead_code)]
 	pub(crate) async fn check_ns_db_tb(
 		&self,
 		ns: &str,
